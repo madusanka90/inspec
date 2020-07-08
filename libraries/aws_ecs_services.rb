@@ -1,4 +1,4 @@
-require "aws_backend"
+require "./aws_backend"
 
 class AwsEcsService < AwsResourceBase
   name "aws_ecs_service"
