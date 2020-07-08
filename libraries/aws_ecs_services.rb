@@ -1,4 +1,4 @@
-require "https://github.com/inspec/inspec-aws/blob/master/libraries/aws_backend.rb"
+# require "https://github.com/inspec/inspec-aws/blob/master/libraries/aws_backend.rb"
 
 class AwsEcsService < AwsResourceBase
   name "aws_ecs_service"
