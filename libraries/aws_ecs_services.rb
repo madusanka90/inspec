@@ -1,4 +1,4 @@
-require 'aws_backend', git: 'https://github.com/inspec/inspec-aws.git'
+require 'aws_backend'
 
 
 class AwsEcsService < Inspec.resource(1)
