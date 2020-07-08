@@ -1,7 +1,7 @@
 require 'aws_backend', git: 'https://github.com/inspec/inspec-aws.git'
 
 
-class AwsEcsService < AwsResourceBase
+class AwsEcsService < Inspec.resource(1)
   name "aws_ecs_service"
   desc "Verifies settings for an ECS cluster"
 
