@@ -1,7 +1,7 @@
 require 'aws_backend'
 
 
-class AwsEcsService < Inspec.resource(1)
+class AwsEcsService < AwsResourceBase
   name "aws_ecs_service"
   desc "Verifies settings for an ECS cluster"
 
