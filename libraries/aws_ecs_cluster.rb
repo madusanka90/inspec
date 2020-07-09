@@ -21,6 +21,8 @@ class PaastryEcsCluster < AwsResourceBase
       # If no params are passed we attempt to get the 'default' cluster.
       cluster = opts.nil? ? {} : { clusters: [opts[:cluster_name]] }
       resp = @aws.ecs_client.describe_clusters(cluster).clusters[0]
+      paastry_cluster_name = resp.cluster_name
+      echo paastry_cluster_name
 
       return if !resp || resp.empty?
 
