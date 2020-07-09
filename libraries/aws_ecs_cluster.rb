@@ -27,11 +27,12 @@ class PaastryEcsCluster < AwsResourceBase
       @status       = resp.status
       @statistics   = resp.statistics
       @cluster_arn  = resp.cluster_arn
-      @cluster_name = resp.cluster_name
+      @pcluster_name = resp.cluster_name
       @running_tasks_count    = resp.running_tasks_count
       @pending_tasks_count    = resp.pending_tasks_count
       @active_services_count  = resp.active_services_count
       @registered_container_instances_count = resp.registered_container_instances_count
+      
     end
   end
 
